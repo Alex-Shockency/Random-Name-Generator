@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="283.0" prefWidth="436.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RandomNameGeneratorController">
+    <stylesheets>
+        <URL value="@randomnamegenerator.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="generate" layoutX="319.0" layoutY="217.0" mnemonicParsing="false" onAction="#generateRandom" text="Generate" />
+      <Label fx:id="randomFirst" layoutX="89.0" layoutY="53.0" prefHeight="62.0" prefWidth="332.0" />
+      <Label fx:id="randomLast" layoutX="89.0" layoutY="136.0" prefHeight="62.0" prefWidth="332.0" />
+      <Label layoutX="15.0" layoutY="67.0" text="First Name:" />
+      <Label layoutX="16.0" layoutY="150.0" text="Last Name:" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="436.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#readFile" text="Open" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="error" layoutX="89.0" layoutY="243.0" />
+   </children>
+</AnchorPane>

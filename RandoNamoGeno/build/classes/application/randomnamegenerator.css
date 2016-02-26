@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+#generate{
+    -fx-font-size:30px;
+	-fx-border-radius:28px;
+	-fx-display:inline-block;
+	-fx-font-family:Arial;
+	-fx-font-size:17px;
+	-fx-padding:16px;
+	-fx-text-decoration:none;
+}
+#generate:hover{
+    -fx-cursor: hand;
+}
+
+#randomFirst{
+    -fx-font-size:20px;
+    -fx-padding:12px;
+    -fx-border:solid #18ab29;
+    -fx-background-color: white;
+}
+#randomLast{
+    -fx-font-size:20px;
+    -fx-padding:12px;
+    -fx-border:solid #18ab29;
+    -fx-background-color: white;
+}
+#error{
+    -fx-text-fill: red;
+}
+.root{
+}
